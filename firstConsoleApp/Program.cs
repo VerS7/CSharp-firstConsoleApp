@@ -17,12 +17,14 @@ namespace firstConsoleApp
             //Case8(); //Начисление вклада
             //Case9(); //Сумма вклада через год
             //Case10(); //Дата рождения
+
             //AvgGeo.avgGeometric();
-            //double num = 5;
+
             //Console.WriteLine(Formula.func(num));
             //Console.WriteLine(Formula.func1(num));
-
-
+            //Console.WriteLine(numSum.sumDigits(55));
+            //numSum.numsCase1();
+            //numSum.numsCase3();
         }
         public static void Case1()
         {
