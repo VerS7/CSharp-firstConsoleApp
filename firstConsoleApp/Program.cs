@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace consoleApp
+namespace firstConsoleApp
 {
     class Program
     {
@@ -17,6 +17,12 @@ namespace consoleApp
             //Case8(); //Начисление вклада
             //Case9(); //Сумма вклада через год
             //Case10(); //Дата рождения
+            //AvgGeo.avgGeometric();
+            //double num = 5;
+            //Console.WriteLine(Formula.func(num));
+            //Console.WriteLine(Formula.func1(num));
+
+
         }
         public static void Case1()
         {

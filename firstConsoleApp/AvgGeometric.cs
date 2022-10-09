@@ -3,9 +3,9 @@
 
 namespace firstConsoleApp
 {
-    class Program
+    class AvgGeo
     {
-        public static void Main(string[] args)
+        public static void avgGeometric()
         {
             Console.Write("Введите первое число:");
             int a = Convert.ToInt32(Console.ReadLine());
