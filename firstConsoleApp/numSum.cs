@@ -48,16 +48,23 @@ namespace firstConsoleApp
                 }
             }
         }
-        /* public static void numsCase4()
+        public static int numsCase4(int A)
         {
-            int[] values = Enumerable.Range(100, 15).ToArray();
+            int[] values = Enumerable.Range(1, 15).ToArray();
+            Dictionary<int, int> digits = new Dictionary<int, int>();
             foreach (int num in values)
             {
-                if (sumDigits(num) % 2 != 0)
+                digits.Add(num, sumDigits(num));
+            }
+            digits.Reverse();
+            foreach (KeyValuePair<int, int> num in digits)
+            {
+                if (num.Value == A)
                 {
-                    Console.WriteLine($"{sumDigits(num)} - {num}");
+                    return num.Key;
                 }
             }
-        } */
+            return 0;
+        }
     }
 }

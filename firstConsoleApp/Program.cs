@@ -7,6 +7,7 @@ namespace firstConsoleApp
     {
         public static void Main(string[] args)
         {
+        //Практикум 3
             //Case1(); //Сумма двух чисел
             //Case2(); //Обратное выражение
             //Case3(); //Сумма трёх чисел
@@ -17,14 +18,16 @@ namespace firstConsoleApp
             //Case8(); //Начисление вклада
             //Case9(); //Сумма вклада через год
             //Case10(); //Дата рождения
-
+        //Практикум 4
             //AvgGeo.avgGeometric();
-
+        //Практикум 5
             //Console.WriteLine(Formula.func(num));
             //Console.WriteLine(Formula.func1(num));
             //Console.WriteLine(numSum.sumDigits(55));
             //numSum.numsCase1();
+            //numSum.numsCase2();
             //numSum.numsCase3();
+            //Console.WriteLine(numSum.numsCase4(3));
         }
         public static void Case1()
         {
