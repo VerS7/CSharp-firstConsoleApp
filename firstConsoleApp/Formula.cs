@@ -42,5 +42,37 @@ namespace firstConsoleApp
             }
             else return 0;
         }
+
+        public static Dictionary<int, string> mCards = new Dictionary<int, string>()
+        {
+            { 1, "Пики" },
+            { 2, "Трефы" },
+            { 3, "Бубны" },
+            { 4, "Черви" }
+        };
+        public static Dictionary<int, string> kCards = new Dictionary<int, string>()
+        {
+            { 6, "Шестёрка" },
+            { 10, "Десятка" },
+            { 11, "Валет" },
+            { 12, "Дама" },
+            { 13, "Король" },
+            { 14, "Туз" }
+        };
+        public static void cards(int m, int k)
+        {
+            if (mCards.ContainsKey(m) & kCards.ContainsKey(k)) 
+            { 
+                Console.WriteLine($"{kCards[k]} {mCards[m]}"); 
+            }  
+            else { Console.WriteLine("Нет такой карты."); };
+        }
+        public static void funcCase(double a, double b, double h) 
+        { 
+            for (double i = a; i < b; i+=h) 
+            {
+                Console.WriteLine($"{Math.Round(i, 5)} | {Math.Round(func2(i), 5)}");
+            } 
+        }
     }
 }

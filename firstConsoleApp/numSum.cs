@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-
-namespace firstConsoleApp
+﻿namespace firstConsoleApp
 {
     public class numSum
     {
@@ -65,6 +61,19 @@ namespace firstConsoleApp
                 }
             }
             return 0;
+        }
+        public static void numsCase5(int A, int B, int X) 
+        {
+            for (int i = A; i <= B; i++) 
+            {
+                string IntStr = i.ToString();
+                int last = IntStr[IntStr.Length - 1] - '0';
+                if (last == X) 
+                {
+                    Console.WriteLine(i);
+                };
+                    
+            }
         }
     }
 }
