@@ -25,6 +25,11 @@ namespace firstConsoleApp
             double final = Math.Pow(a, 3) - Math.Sin(a);
             return final; 
         }
+        
+        public static int func1Case(int a, int b) 
+        {
+            return func1(a) > func1(b) ? a : b;
+        }
 
         public static double func2(double x)
         {

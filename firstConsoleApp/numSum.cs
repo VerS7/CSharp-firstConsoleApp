@@ -1,4 +1,8 @@
-﻿namespace firstConsoleApp
+﻿using System.Collections.Generic;
+using System.Linq;
+
+
+namespace firstConsoleApp
 {
     public class numSum
     {
@@ -21,9 +25,8 @@
                 Console.WriteLine($"{sumDigits(num)} - {num}");
             }
         }
-        public static void numsCase2()
+        public static void numsCase2(int C)
         {
-            int C = 5;
             int[] values = Enumerable.Range(100, 15).ToArray();
             foreach (int num in values)
             {
