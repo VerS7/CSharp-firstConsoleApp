@@ -1,14 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
 namespace firstConsoleApp
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
+            //Раскомментить необходимое//
+
             ////Практикум 3
-            //Case4();               // 1
+            //Cases.Case4();         // 1
             //AvgGeo.avgGeometric(); // 2
 
             ////Практикум 4
@@ -20,10 +26,10 @@ namespace firstConsoleApp
             ////Практикум 5
             //Console.WriteLine(Formula.func1Case(5, 15)); // 1
             //Console.WriteLine(numSum.sumDigits(55));     // 2
-            //numSum.numsCase1();                         // a
-            //numSum.numsCase2(5);                        // б
-            //numSum.numsCase3();                         // в
-            //Console.WriteLine(numSum.numsCase4(3));     // г
+            //numSum.numsCase1(10, 200);                         // a
+            //numSum.numsCase2(10, 200, 5);                      // б
+            //numSum.numsCase3(10, 200);                         // в
+            //Console.WriteLine(numSum.numsCase4(10, 200, 3));   // г
 
             ////Практикум 6
             //Arrs.ArrsCase1(Arrs.randArray(Convert.ToInt32(Console.ReadLine()))); // 1

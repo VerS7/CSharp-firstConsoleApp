@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
 namespace firstConsoleApp
@@ -17,17 +20,17 @@ namespace firstConsoleApp
             return sum;
         }
 
-        public static void numsCase1()
+        public static void numsCase1(int a, int b)
         {
-            int[] values = Enumerable.Range(10, 23).ToArray();
+            int[] values = Enumerable.Range(a, b).ToArray();
             foreach (int num in values)
             {
                 Console.WriteLine($"{sumDigits(num)} - {num}");
             }
         }
-        public static void numsCase2(int C)
+        public static void numsCase2(int a, int b, int C)
         {
-            int[] values = Enumerable.Range(100, 15).ToArray();
+            int[] values = Enumerable.Range(a, b).ToArray();
             foreach (int num in values)
             {
                 if (sumDigits(num) == C)
@@ -36,9 +39,9 @@ namespace firstConsoleApp
                 }
             }
         }
-        public static void numsCase3()
+        public static void numsCase3(int a, int b)
         {
-            int[] values = Enumerable.Range(100, 15).ToArray();
+            int[] values = Enumerable.Range(a, b).ToArray();
             foreach (int num in values)
             {
                 if (sumDigits(num) % 2 != 0)
@@ -47,7 +50,7 @@ namespace firstConsoleApp
                 }
             }
         }
-        public static int numsCase4(int A)
+        public static int numsCase4(int a, int b, int A)
         {
             int[] values = Enumerable.Range(1, 15).ToArray();
             Dictionary<int, int> digits = new Dictionary<int, int>();
