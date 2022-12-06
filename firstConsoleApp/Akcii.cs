@@ -36,12 +36,14 @@ namespace firstConsoleApp
         }
         public void sell(long num, double price) 
         {
-            if (num <= _stoks_number & price <= _stoks_price) 
+            if (num <= _stoks_number) 
             {
-                _total_value -= num * price;
+                _stoks_number -= num;
+                _stoks_price = price;
+                _total_value -= count_total();
                 Console.WriteLine($"Продажа пакета ({num} акций по цене {price}). {_company}");
             }
-            else if (num < _stoks_number) { Console.WriteLine("Не хватает акций"); }
+            else if (num > _stoks_number) { Console.WriteLine("Не хватает акций"); }
         }
         public void buy(long num, double price) 
         {

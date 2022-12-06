@@ -58,6 +58,7 @@ namespace firstConsoleApp
             this.clientName = client;
             this.ident = ID;
             this.balance = balance;
+            Console.WriteLine("Создана Visa Plus.");
         }
         public new void info()
         {
@@ -90,7 +91,7 @@ namespace firstConsoleApp
                 {
                     balance -= num;
                     over -= balance * -1;
-                    debt += (maxOver - over) * (1 + prc);
+                    debt += (balance * -1) * (1 + prc);
                     balance = 0;
                 }
                 Console.WriteLine($"Вы успешно сняли с карты {num}$");
