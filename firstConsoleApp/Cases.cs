@@ -10,9 +10,13 @@ namespace firstConsoleApp
     {
         public static void Case4()
         {
-            double a = Convert.ToDouble(Console.ReadLine());
-            double b = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"{a}*{b}={a * b:f1}");
+            try 
+            {
+                double a = Convert.ToDouble(Console.ReadLine());
+                double b = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"{a}*{b}={a * b:f1}");
+            }
+            catch (FormatException e) { Console.WriteLine($"Произошла ошибка. Неверный формат ввода // {e.Message}"); }
         }
     }
 }
