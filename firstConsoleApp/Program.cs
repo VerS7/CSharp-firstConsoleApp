@@ -101,7 +101,7 @@ namespace firstConsoleApp
                     VisaPlus card1 = new VisaPlus("Sample User Name", 0987654321, 0);
                     card1.add(1000);
                     card1.info();
-                    card1.take(1500);
+                    card1.take(1300);
                     card1.info();
                     card1.add(1200);
                     card1.info();
@@ -121,7 +121,7 @@ namespace firstConsoleApp
                     // 2
                     Circle circ = new Circle();
                     Console.WriteLine(circ.GetType().Name);
-                    circ.Radius = 10;
+                    circ.Radius = 1;
                     circ.countPerimeter();
                     circ.countSquare();
                     Console.WriteLine($"{circ.Perimeter}, {circ.Square}");
@@ -136,9 +136,9 @@ namespace firstConsoleApp
 
                     Triagle tria = new Triagle();
                     Console.WriteLine(tria.GetType().Name);
-                    tria.a = 11;
-                    tria.b = 10;
-                    tria.c = 12;
+                    tria.a = 3;
+                    tria.b = 4;
+                    tria.c = 5;
                     tria.countPerimeter();
                     tria.countSquare();
                     Console.WriteLine($"{tria.Perimeter}, {tria.Square}");
@@ -170,20 +170,14 @@ namespace firstConsoleApp
 
                 case 24:
                     PlayersList players = new();
-                    players.AddPlayer("Давыдов");
-                    players.AddPlayer("Мишуков");
-                    players.AddPlayer("Корнеев");
-                    players.SendPlayers();
                     break;
 
                 case 25:
                     HRQueue queue = new();
-                    queue.AddPlaceholderClients(5);
-                    queue.QueueInfo();
-                    queue.AddClient("Этот клиент", 35);
-                    queue.AddClient("Другой клиент", 63);
-                    queue.DequeueClient();
-                    queue.QueueInfo();
+                    break;
+
+                case 26:
+                    EntrantRegister ent = new();
                     break;
             }
         }
