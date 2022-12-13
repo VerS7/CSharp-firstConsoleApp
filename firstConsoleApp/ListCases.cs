@@ -149,17 +149,17 @@ namespace firstConsoleApp
 
         public void AddPlaceholderClients(int clients_count)
         {
-            Random rand = new();
+            Random rand = new Random();
             for (int i = 0; i < clients_count; i++)
             {
 
-                Client cl = new($"Клиент{i}", (byte)rand.Next(18, 65));
+                Client cl = new Client($"Клиент{i}", (byte)rand.Next(18, 65));
                 queue.Enqueue(cl);
             }
         }
         public void AddClient(string Name, byte Age)
         {
-            Client cl = new(Name, Age);
+            Client cl = new Client(Name, Age);
             queue.Enqueue(cl);
         }
         public void QueueInfo()
@@ -207,7 +207,7 @@ namespace firstConsoleApp
         {
             EntrantHandler();
         }
-        private List<Entrant?> entrants = new();
+        private List<Entrant?> entrants = new List<Entrant?>();
         public void EntrantHandler()
         {
             Console.WriteLine("1 - Регистрация абитуриентов");
