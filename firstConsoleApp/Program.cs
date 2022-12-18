@@ -35,7 +35,7 @@ namespace firstConsoleApp
                     numSum.numsCase5(1, 150, 1);         // 3
                     break;
                 case 5:
-                    Formula.funcCase(0.01, 0.3, 0.05);   // 4
+                    Formula.funcCase(-0.4, 0.3, 0.05);   // 4
                     break;
 
                 ////Практикум 5
@@ -160,6 +160,7 @@ namespace firstConsoleApp
                     account.RegisterHandler(colorDelegate);
                     account.Withdraw(100);
                     account.Withdraw(50);
+                    account.Put(300);
                     account.Withdraw(100);
                     break;
 

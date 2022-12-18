@@ -42,17 +42,17 @@ namespace firstConsoleApp
 
         public static double func2(double x)
         {
-            if (Math.Abs(x) <= 0.1)
+            if (Math.Abs(Math.Round(x, 4)) <= 0.1)
             {
-                return Math.Pow(x, 3) - 0.1;
+                return Math.Pow(Math.Round(x, 4), 3) - 0.1;
             }
-            else if (Math.Abs(x) > 0.1 && Math.Abs(x) < 0.2)
+            else if (0.1 < Math.Abs(Math.Round(x, 4)) && Math.Abs(Math.Round(x, 4)) <= 0.2)
             {
-                return 0.2 * x - 0.1;
+                return (0.2 * Math.Round(x, 4)) - 0.1;
             }
-            else if (Math.Abs(x) > 0.2)
+            else if (Math.Abs(Math.Round(x,4)) > 0.2)
             {
-                return Math.Pow(x, 3) + 0.1;
+                return Math.Pow(Math.Round(x, 4), 3) + 0.1;
             }
             else return 0;
         }

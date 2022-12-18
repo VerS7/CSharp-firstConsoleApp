@@ -54,20 +54,4 @@ namespace firstConsoleApp
             this.Square = Math.Sqrt((p*(p-a)*(p-b)*(p-c)));
         }
     }
-    class Trapezoid : Figure
-    {
-        public double a { get; set; }
-        public double b { get; set; }
-        public double c { get; set; }
-        public double d { get; set; }
-        public double h { get; set; }
-        public override void countPerimeter()
-        {
-            this.Perimeter = a + b + c + d;
-        }
-        public override void countSquare()
-        {
-            this.Square = ((a+b) * 1/2) * h;
-        }
-    }
 }

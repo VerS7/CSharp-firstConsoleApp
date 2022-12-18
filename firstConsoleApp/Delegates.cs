@@ -58,6 +58,7 @@ namespace firstConsoleApp
         public void Put(int sum) 
         {
             _sum += sum;
+            _del?.Invoke($"Сумма {sum} добавлена на счёт.");
         }
         public void Withdraw(int sum)
         {
@@ -77,15 +78,21 @@ namespace firstConsoleApp
         }
         public static void Color_Message(string message)
         {
-            if (message.Contains("Недостаточно денег"))
+            if (message.Contains("снята со счёта"))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(message);
                 Console.ResetColor();
             }
-            else
+            else if (message.Contains("добавлена на счёт"))
             {
                 Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(message);
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(message);
                 Console.ResetColor();
             }
