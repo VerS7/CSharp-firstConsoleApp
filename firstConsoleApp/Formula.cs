@@ -32,7 +32,7 @@ namespace firstConsoleApp
                 double final = Math.Pow(a, 3) - Math.Sin(a);
             return final;
             }
-            catch (Exception e) { throw new Exception($"Произошла ошибка в {func1}. {e.Source}"); }
+            catch (Exception e) { throw new Exception($"Произошла ошибка в {func1(1).GetType()}. {e.Source}"); }
         }
         
         public static int func1Case(int a, int b) 

@@ -170,15 +170,15 @@ namespace firstConsoleApp
                     break;
 
                 case 24:
-                    PlayersList players = new();
+                    PlayersList players = new PlayersList();
                     break;
 
                 case 25:
-                    HRQueue queue = new();
+                    HRQueue queue = new HRQueue();
                     break;
 
                 case 26:
-                    EntrantRegister ent = new();
+                    EntrantRegister ent = new EntrantRegister();
                     break;
             }
         }
